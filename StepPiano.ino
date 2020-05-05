@@ -1,5 +1,3 @@
-// { -1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1 ,-1}
-// { 0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0}
 const int stepPins[8] = {3,4,5,6,7,8,9,10};
 const int speakerPin  = 2;
 
@@ -95,29 +93,3 @@ void newMusic()
   waitTimer = millis();
   musicCurrent = random(musicNum);
 }
-
-/*void ran()
-{
-  if(millis()-x>=8000)
-  {
-    if(millis()-y>=100)
-    {
-    y=millis();
-    Serial.println(n);
-    tone(speakerPin,frequency[n],count);
-    
-    if(n>=7)
-    {
-      count=30;
-      pos=-1;
-    }
-    else if(n<=0)
-    {
-      pos=1;
-      count=90;
-    }
-    
-    n=n+pos;
-    }
-  }
-}*/
